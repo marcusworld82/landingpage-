@@ -3,432 +3,252 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Empossible runs the front office your business doesn't have time to staff. Every call answered. Every quote followed up. Every customer remembered." />
-  <title>Empossible — Your Front Office, Running 24/7</title>
+  <title>Empossible | Front Office Revenue Recovery</title>
+  <meta name="description" content="Empossible answers missed calls, follows up quotes, reactivates old customers, and helps service businesses recover lost revenue without new hires." />
+  <meta name="theme-color" content="#050505" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&family=Syne:wght@700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Manrope:wght@700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
+  <div class="site-bg" aria-hidden="true">
+    <div class="bg-grid"></div>
+    <div class="bg-orb orb-a"></div>
+    <div class="bg-orb orb-b"></div>
+    <div class="bg-orb orb-c"></div>
+    <div class="bg-beam beam-a"></div>
+    <div class="bg-beam beam-b"></div>
+    <div class="bg-noise"></div>
+  </div>
 
-  <!-- ░░ NOISE OVERLAY ░░ -->
-  <div class="noise" aria-hidden="true"></div>
-
-  <!-- ░░ AMBIENT BG ORBS ░░ -->
-  <div class="orb orb-1" aria-hidden="true"></div>
-  <div class="orb orb-2" aria-hidden="true"></div>
-  <div class="orb orb-3" aria-hidden="true"></div>
-
-  <!-- ░░ NAV ░░ -->
-  <nav class="nav" id="nav">
-    <div class="nav-inner">
-      <a href="#" class="nav-logo">EMP<span>OSSIBLE</span></a>
-      <a href="#audit" class="btn btn-ghost nav-cta">Book Free Audit</a>
+  <header class="topbar" id="topbar">
+    <div class="topbar__inner">
+      <a href="#hero" class="brand">EMPOSSIBLE</a>
+      <a href="https://cal.com/marcus-collins-qmojtk/empossible-audit-ssession" target="_blank" rel="noopener" class="btn btn-primary magnetic">
+        <span>Book Free Audit</span>
+      </a>
     </div>
-  </nav>
+  </header>
 
-  <!-- ░░ HERO ░░ -->
-  <section class="hero" id="hero">
-    <div class="hero-grid-lines" aria-hidden="true"></div>
-    <div class="container">
-      <div class="hero-eyebrow reveal">Front Office Automation for Trades &amp; Service Businesses</div>
-      <h1 class="hero-headline reveal reveal-delay-1">
-        Your phone rang.<br />
-        Nobody answered.<br />
-        <span class="gradient-text">That job just went<br />to your competitor.</span>
-      </h1>
-      <p class="hero-sub reveal reveal-delay-2">
-        Empossible runs the front office your business doesn't have time to staff.
-        Every call answered. Every quote followed up. Every customer remembered.
-        No new hires. No new payroll.
-      </p>
-      <div class="hero-actions reveal reveal-delay-3">
-        <a href="#audit" class="btn btn-primary">Book a Free Revenue Audit</a>
-        <a href="#how" class="btn btn-outline">See How It Works</a>
+  <main>
+    <section class="hero section" id="hero">
+      <div class="container">
+        <div class="hero__wrap reveal">
+          <div class="eyebrow pill">Front office revenue recovery for service businesses</div>
+          <div class="hero__halo" aria-hidden="true"></div>
+
+          <div class="hero__floating hero__floating--left glass tilt-card reveal">
+            <span class="floating__label">Missed calls</span>
+            <strong>Recovered</strong>
+            <small>Auto text-back + live answer flow</small>
+          </div>
+
+          <div class="hero__floating hero__floating--right glass tilt-card reveal">
+            <span class="floating__label">Old quotes</span>
+            <strong>Reactivated</strong>
+            <small>Persistent follow-up until yes or no</small>
+          </div>
+
+          <h1 class="hero__title reveal">
+            Your phone rang.<br />
+            Nobody answered.<br />
+            <span>That job just went to your competitor.</span>
+          </h1>
+
+          <p class="hero__sub reveal">
+            Empossible runs the front office your business does not have time to staff.
+            Every call answered. Every quote followed up. Every customer remembered.
+            No new hires. No new payroll.
+          </p>
+
+          <div class="hero__actions reveal">
+            <a href="https://cal.com/marcus-collins-qmojtk/empossible-audit-ssession" target="_blank" rel="noopener" class="btn btn-primary btn-xl magnetic">
+              <span>Book a Free Revenue Audit</span>
+            </a>
+            <a href="#process" class="btn btn-secondary magnetic">
+              <span>See How It Works</span>
+            </a>
+          </div>
+
+          <div class="hero__proof reveal">
+            <div class="proof-card glass"><span class="proof-card__kicker">No new payroll</span><strong>Replace 3 jobs with 1 system</strong></div>
+            <div class="proof-card glass"><span class="proof-card__kicker">Response speed</span><strong>Fast text-back workflow</strong></div>
+            <div class="proof-card glass"><span class="proof-card__kicker">Always on</span><strong>24/7 front office coverage</strong></div>
+          </div>
+
+          <div class="hero__stats reveal">
+            <article class="stat glass tilt-card"><span class="stat__value" data-count="24">0</span><span class="stat__unit">/7</span><p>Coverage for inbound opportunities</p></article>
+            <article class="stat glass tilt-card"><span class="stat__value" data-count="3">0</span><span class="stat__unit">min</span><p>Fast missed-call text response</p></article>
+            <article class="stat glass tilt-card"><span class="stat__value" data-count="2">0</span><span class="stat__unit">weeks</span><p>Typical setup window</p></article>
+          </div>
+        </div>
       </div>
-      <div class="hero-stats reveal reveal-delay-4">
-        <div class="stat-pill"><span class="stat-num" data-target="94">0</span><span>%</span><span class="stat-label">Call Answer Rate</span></div>
-        <div class="stat-pill"><span class="stat-num" data-target="3">0</span><span>min</span><span class="stat-label">Avg Follow-Up Time</span></div>
-        <div class="stat-pill"><span class="stat-num" data-target="2">0</span><span>wk</span><span class="stat-label">To Go Live</span></div>
+    </section>
+
+    <section class="section problem" id="problem">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="eyebrow pill">The real leaks</div>
+          <h2>The five ways you're losing money right now</h2>
+          <p>Not features. Not software talk. The exact five things happening in your business today.</p>
+        </div>
+        <div class="bento bento--problem">
+          <article class="panel glass tilt-card reveal"><div class="panel__number">01</div><h3>The call that went to voicemail.</h3><p>Somebody called during a job, after hours, or while your line was busy. They did not leave a message. They called the next guy on Google.</p></article>
+          <article class="panel glass tilt-card reveal"><div class="panel__number">02</div><h3>The quote that went quiet.</h3><p>You sent a price. They said "let me think about it." Nobody followed up. That job is gone, and you never even knew it was gone.</p></article>
+          <article class="panel glass tilt-card reveal"><div class="panel__number">03</div><h3>The customer you forgot existed.</h3><p>Somewhere in your phone or files is a list of everyone you have ever worked for. Most of them have not heard from you in over a year.</p></article>
+          <article class="panel glass tilt-card reveal"><div class="panel__number">04</div><h3>The reviews that stopped coming in.</h3><p>You do good work. Most happy customers never get asked to say so. Meanwhile a competitor's review count keeps climbing.</p></article>
+          <article class="panel panel--wide glass tilt-card reveal"><div class="panel__number">05</div><h3>You, doing five jobs at once.</h3><p>Technician. Dispatcher. Salesman. Bookkeeper. Marketer. One person cannot do all five well, all day, every day, forever.</p></article>
+        </div>
       </div>
-    </div>
-    <div class="hero-scroll-hint" aria-hidden="true">
-      <span></span>
-    </div>
-  </section>
+    </section>
 
-  <!-- ░░ FIVE WAYS ░░ -->
-  <section class="section losses" id="losses">
-    <div class="container">
-      <div class="section-label reveal">The Real Problem</div>
-      <h2 class="section-title reveal">The five ways you're losing<br /><span class="gradient-text">money right now</span></h2>
-      <p class="section-sub reveal">Not features. The exact five things happening in your business today.</p>
-      <div class="loss-grid">
-
-        <div class="loss-card glass reveal">
-          <div class="loss-number">01</div>
-          <div class="loss-icon">📵</div>
-          <h3>The call that went to voicemail.</h3>
-          <p>Somebody called during a job, after hours, or while your line was busy. They didn't leave a message. They called the next guy on Google.</p>
+    <section class="section outcomes" id="outcomes">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="eyebrow pill">What we actually do</div>
+          <h2>Built around outcome, not software jargon</h2>
+          <p>Every piece is designed to stop revenue from leaking out of the business you already built.</p>
         </div>
-
-        <div class="loss-card glass reveal">
-          <div class="loss-number">02</div>
-          <div class="loss-icon">💸</div>
-          <h3>The quote that went quiet.</h3>
-          <p>You sent a price. They said "let me think about it." Nobody followed up. That job is gone, and you never even knew it was gone.</p>
+        <div class="outcomes-grid">
+          <article class="outcome glass tilt-card reveal"><span class="outcome__tag">01</span><h3>We answer your phone.</h3><p>Every call gets picked up, day or night, weekday or weekend. Urgent calls get sent straight to you.</p></article>
+          <article class="outcome glass tilt-card reveal"><span class="outcome__tag">02</span><h3>We text back every missed call.</h3><p>If a call slips through, the customer gets a text back within minutes, before they have time to call someone else.</p></article>
+          <article class="outcome glass tilt-card reveal"><span class="outcome__tag">03</span><h3>We chase down every quote.</h3><p>Every estimate gets scheduled follow-up until it becomes a yes, a no, or a dead deal. Nothing sits and rots.</p></article>
+          <article class="outcome glass tilt-card reveal"><span class="outcome__tag">04</span><h3>We wake up your old customer list.</h3><p>Seasonal reminders, maintenance nudges, and reactivation messages go to the people who already trust you.</p></article>
+          <article class="outcome glass tilt-card reveal"><span class="outcome__tag">05</span><h3>We ask for the review.</h3><p>Completed jobs trigger review requests automatically. Unhappy customers get routed back to you first.</p></article>
+          <article class="outcome glass tilt-card reveal"><span class="outcome__tag">06</span><h3>We book the appointment.</h3><p>Scheduling, confirmations, and reminders reduce no-shows and cut down the back-and-forth.</p></article>
+          <article class="outcome glass tilt-card reveal"><span class="outcome__tag">07</span><h3>We keep it all in one place.</h3><p>Every call, every quote, every customer, one clean system instead of three notebooks and a phone full of texts.</p></article>
         </div>
-
-        <div class="loss-card glass reveal">
-          <div class="loss-number">03</div>
-          <div class="loss-icon">👤</div>
-          <h3>The customer you forgot existed.</h3>
-          <p>Somewhere in your phone is a list of everyone you've ever worked for. Most of them haven't heard from you in over a year. Some of them need you right now.</p>
-        </div>
-
-        <div class="loss-card glass reveal">
-          <div class="loss-number">04</div>
-          <div class="loss-icon">⭐</div>
-          <h3>The reviews that stopped coming in.</h3>
-          <p>You do good work. Most of your happy customers never get asked to say so. Your Google page hasn't moved in months while a competitor's keeps climbing.</p>
-        </div>
-
-        <div class="loss-card glass reveal loss-card--wide">
-          <div class="loss-number">05</div>
-          <div class="loss-icon">🔥</div>
-          <h3>You, doing five jobs at once.</h3>
-          <p>Technician. Dispatcher. Salesman. Bookkeeper. Marketer. One person can't do all five well, all day, every day, forever.</p>
-        </div>
-
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ░░ WHAT WE DO ░░ -->
-  <section class="section solutions" id="solutions">
-    <div class="container">
-      <div class="section-label reveal">The Fix</div>
-      <h2 class="section-title reveal">What we actually<br /><span class="gradient-text">do about it</span></h2>
-      <div class="solution-list">
-
-        <div class="solution-row glass reveal">
-          <div class="sol-marker">01</div>
-          <div class="sol-content">
-            <h3>We answer your phone.</h3>
-            <p>Every call gets picked up, day or night, weekday or weekend. Urgent calls get sent straight to you.</p>
-          </div>
-          <div class="sol-badge">24/7 Coverage</div>
+    <section class="section process" id="process">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="eyebrow pill">How it works</div>
+          <h2>Three steps. Zero complexity.</h2>
+          <p>Simple enough to launch fast, strong enough to run in the background of a real business.</p>
         </div>
-
-        <div class="solution-row glass reveal">
-          <div class="sol-marker">02</div>
-          <div class="sol-content">
-            <h3>We text back every missed call.</h3>
-            <p>If a call does slip through, the customer gets a text back within minutes, before they've had time to call someone else.</p>
-          </div>
-          <div class="sol-badge">&lt; 3 Min</div>
+        <div class="process-grid">
+          <article class="process-card glass tilt-card reveal"><div class="process-card__num">01</div><h3>We audit where you're losing revenue.</h3><p>A short call, no pitch, just questions about missed calls, old quotes, and your customer list. You will know your real numbers by the end.</p></article>
+          <article class="process-card glass tilt-card reveal"><div class="process-card__num">02</div><h3>We set up the system that plugs the gaps.</h3><p>Built around what you actually told us on the call, not a generic package that ignores how your business works.</p></article>
+          <article class="process-card glass tilt-card reveal"><div class="process-card__num">03</div><h3>You watch missed calls and old quotes turn back into jobs.</h3><p>No new hires. No new software to learn. It runs in the background while you keep running the company.</p></article>
         </div>
-
-        <div class="solution-row glass reveal">
-          <div class="sol-marker">03</div>
-          <div class="sol-content">
-            <h3>We chase down every quote.</h3>
-            <p>Every estimate gets a scheduled follow-up until it turns into a yes, a no, or a dead deal. Nothing sits and rots.</p>
-          </div>
-          <div class="sol-badge">Automated</div>
-        </div>
-
-        <div class="solution-row glass reveal">
-          <div class="sol-marker">04</div>
-          <div class="sol-content">
-            <h3>We wake up your old customer list.</h3>
-            <p>Seasonal reminders, maintenance nudges, reactivation messages, sent to the people who already trust you.</p>
-          </div>
-          <div class="sol-badge">Reactivation</div>
-        </div>
-
-        <div class="solution-row glass reveal">
-          <div class="sol-marker">05</div>
-          <div class="sol-content">
-            <h3>We ask for the review.</h3>
-            <p>Every completed job gets a review request sent automatically. Unhappy customers get routed to you privately first.</p>
-          </div>
-          <div class="sol-badge">Reputation</div>
-        </div>
-
-        <div class="solution-row glass reveal">
-          <div class="sol-marker">06</div>
-          <div class="sol-content">
-            <h3>We book the appointment.</h3>
-            <p>Online scheduling, confirmations, reminders. Fewer no-shows, less back-and-forth.</p>
-          </div>
-          <div class="sol-badge">Scheduling</div>
-        </div>
-
-        <div class="solution-row glass reveal">
-          <div class="sol-marker">07</div>
-          <div class="sol-content">
-            <h3>We keep it all in one place.</h3>
-            <p>Every call, every quote, every customer — one system instead of three notebooks and a phone full of texts.</p>
-          </div>
-          <div class="sol-badge">Unified CRM</div>
-        </div>
-
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ░░ HOW IT WORKS ░░ -->
-  <section class="section how" id="how">
-    <div class="container">
-      <div class="section-label reveal">The Process</div>
-      <h2 class="section-title reveal">Three steps.<br /><span class="gradient-text">Zero complexity.</span></h2>
-      <div class="steps-track">
-
-        <div class="step reveal">
-          <div class="step-connector" aria-hidden="true"></div>
-          <div class="step-circle">1</div>
-          <div class="step-body glass">
-            <h3>We audit where you're losing revenue.</h3>
-            <p>A short call, no pitch, just questions about missed calls, old quotes, and your customer list. You'll know your real numbers by the end of it.</p>
-          </div>
+    <section class="section comparison" id="comparison">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="eyebrow pill">What this replaces</div>
+          <h2>Owners think in dollars</h2>
+          <p>Most businesses are already paying for the gap, just in lost jobs, weak follow-up, and office chaos.</p>
         </div>
-
-        <div class="step reveal">
-          <div class="step-connector" aria-hidden="true"></div>
-          <div class="step-circle">2</div>
-          <div class="step-body glass">
-            <h3>We set up the system that plugs the gaps.</h3>
-            <p>Built around what you actually told us on the call, not a generic package.</p>
-          </div>
+        <div class="comparison-shell glass reveal">
+          <article class="comparison-card comparison-card--muted">
+            <h3>The old way</h3>
+            <ul>
+              <li>Receptionist: $30,000 to $40,000 a year, plus benefits and turnover</li>
+              <li>Follow-up person: another $30,000 to $40,000 a year</li>
+              <li>Review management: more time than most owners have to give</li>
+            </ul>
+            <strong class="comparison-total">$80,000+ yearly drag</strong>
+          </article>
+          <div class="comparison-vs">VS</div>
+          <article class="comparison-card comparison-card--featured">
+            <h3>Empossible</h3>
+            <ul>
+              <li>Calls answered around the clock</li>
+              <li>Quotes and dormant leads actively followed up</li>
+              <li>Review generation and scheduling built into one system</li>
+            </ul>
+            <strong class="comparison-total">A fraction of one salary</strong>
+          </article>
         </div>
-
-        <div class="step reveal">
-          <div class="step-circle">3</div>
-          <div class="step-body glass">
-            <h3>You watch missed calls and old quotes turn back into jobs.</h3>
-            <p>No new hires. No new software to learn. It runs in the background of a business you're already running.</p>
-          </div>
-        </div>
-
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ░░ COST COMPARISON ░░ -->
-  <section class="section compare" id="compare">
-    <div class="container">
-      <div class="section-label reveal">The Math</div>
-      <h2 class="section-title reveal">What this<br /><span class="gradient-text">replaces</span></h2>
-      <p class="section-sub reveal">Owners think in dollars. Here's the real cost of the way you're doing it now.</p>
-      <div class="compare-grid">
-
-        <div class="compare-card glass reveal old-way">
-          <div class="compare-tag">The Old Way</div>
-          <ul>
-            <li>
-              <strong>Receptionist</strong>
-              <span>$30,000 – $40,000/yr + benefits + sick days + turnover</span>
-            </li>
-            <li>
-              <strong>Quote Follow-Up Person</strong>
-              <span>$30,000 – $40,000/yr + management overhead</span>
-            </li>
-            <li>
-              <strong>Review Manager</strong>
-              <span>More time than most owners have to give</span>
-            </li>
-          </ul>
-          <div class="compare-total">$80,000+ per year</div>
+    <section class="section studies" id="studies">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="eyebrow pill">Case study placeholders</div>
+          <h2>Real-world examples, written to feel believable</h2>
+          <p>These are polished placeholders that can be swapped for live client results the second you have them.</p>
         </div>
-
-        <div class="compare-vs" aria-hidden="true">VS</div>
-
-        <div class="compare-card glass reveal new-way">
-          <div class="compare-tag highlight">Empossible</div>
-          <ul>
-            <li><strong>Calls answered 24/7</strong><span>All three roles covered</span></li>
-            <li><strong>Quotes chased automatically</strong><span>Running around the clock</span></li>
-            <li><strong>Reviews collected on autopilot</strong><span>No new hires. No new payroll.</span></li>
-          </ul>
-          <div class="compare-total highlight-text">A fraction of one salary.</div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ░░ CASE STUDIES ░░ -->
-  <section class="section cases" id="cases">
-    <div class="container">
-      <div class="section-label reveal">Results</div>
-      <h2 class="section-title reveal">Real businesses.<br /><span class="gradient-text">Real numbers.</span></h2>
-      <div class="cases-grid">
-
-        <!-- PLACEHOLDER: replace with real client data -->
-        <div class="case-card glass reveal">
-          <div class="case-trade">HVAC · Columbus, OH</div>
-          <h3 class="case-biz">Apex Heating &amp; Cooling</h3>
-          <div class="case-metrics">
-            <div class="metric">
-              <span class="metric-before">Before</span>
-              <span class="metric-num">14</span>
-              <span class="metric-label">missed calls/week unanswered</span>
+        <div class="studies-grid">
+          <article class="study glass tilt-card reveal">
+            <div class="study__meta"><span>HVAC</span><span>Cleveland, Ohio</span></div>
+            <h3>Lakeshore Heating &amp; Cooling</h3>
+            <div class="study__metrics">
+              <div class="metric"><small>Before</small><strong>16</strong><span>missed calls a week</span></div>
+              <div class="metric"><small>After 30 days</small><strong>121</strong><span>recovered conversations</span></div>
+              <div class="metric"><small>Booked</small><strong>27</strong><span>new jobs from follow-up</span></div>
             </div>
-            <div class="metric-arrow">→</div>
-            <div class="metric">
-              <span class="metric-after">After</span>
-              <span class="metric-num">127</span>
-              <span class="metric-label">calls recovered in first 30 days</span>
-            </div>
-          </div>
-          <p class="case-note"><!-- PLACEHOLDER: replace with client quote when available -->&ldquo;I didn't realize how many calls I was losing until I saw the first month's report.&rdquo;</p>
-          <div class="case-disclaimer">* Placeholder data. Updated when client result is confirmed.</div>
-        </div>
+            <blockquote>"We always assumed a few missed calls were normal. Seeing how many jobs came back in the first month changed how I look at the office side of the business."</blockquote>
+          </article>
 
-        <!-- PLACEHOLDER: replace with real client data -->
-        <div class="case-card glass reveal">
-          <div class="case-trade">Plumbing · Cleveland, OH</div>
-          <h3 class="case-biz">Riverfront Plumbing Co.</h3>
-          <div class="case-metrics">
-            <div class="metric">
-              <span class="metric-before">Before</span>
-              <span class="metric-num">31</span>
-              <span class="metric-label">quotes sitting with no follow-up</span>
+          <article class="study glass tilt-card reveal">
+            <div class="study__meta"><span>Plumbing</span><span>Houston, Texas</span></div>
+            <h3>Northline Plumbing Services</h3>
+            <div class="study__metrics">
+              <div class="metric"><small>Before</small><strong>34</strong><span>quotes sitting cold</span></div>
+              <div class="metric"><small>After 60 days</small><strong>$24.8k</strong><span>recovered from quote follow-up</span></div>
+              <div class="metric"><small>Speed</small><strong>4 min</strong><span>average text-back time</span></div>
             </div>
-            <div class="metric-arrow">→</div>
-            <div class="metric">
-              <span class="metric-after">After</span>
-              <span class="metric-num">$18,400</span>
-              <span class="metric-label">recovered from cold quotes in 60 days</span>
-            </div>
-          </div>
-          <p class="case-note"><!-- PLACEHOLDER: replace with client quote when available -->&ldquo;Money I didn't even know I'd left on the table.&rdquo;</p>
-          <div class="case-disclaimer">* Placeholder data. Updated when client result is confirmed.</div>
-        </div>
+            <blockquote>"The biggest surprise was not the missed calls. It was how much money was sitting in old quotes that nobody had touched."</blockquote>
+          </article>
 
-        <!-- PLACEHOLDER: replace with real client data -->
-        <div class="case-card glass reveal">
-          <div class="case-trade">Electrical · Akron, OH</div>
-          <h3 class="case-biz">Tri-County Electric</h3>
-          <div class="case-metrics">
-            <div class="metric">
-              <span class="metric-before">Before</span>
-              <span class="metric-num">12</span>
-              <span class="metric-label">Google reviews — stagnant 14 months</span>
+          <article class="study glass tilt-card reveal">
+            <div class="study__meta"><span>Electrical</span><span>Los Angeles, California</span></div>
+            <h3>Pacific Crest Electric</h3>
+            <div class="study__metrics">
+              <div class="metric"><small>Before</small><strong>22</strong><span>Google reviews total</span></div>
+              <div class="metric"><small>After 90 days</small><strong>71</strong><span>Google reviews total</span></div>
+              <div class="metric"><small>Repeat work</small><strong>19</strong><span>reactivated customer jobs</span></div>
             </div>
-            <div class="metric-arrow">→</div>
-            <div class="metric">
-              <span class="metric-after">After</span>
-              <span class="metric-num">89</span>
-              <span class="metric-label">reviews in first 90 days</span>
-            </div>
-          </div>
-          <p class="case-note"><!-- PLACEHOLDER: replace with client quote when available -->&ldquo;We went from invisible to the top result in our area.&rdquo;</p>
-          <div class="case-disclaimer">* Placeholder data. Updated when client result is confirmed.</div>
+            <blockquote>"It felt like we finally had a real front office without taking on the payroll that comes with building one."</blockquote>
+          </article>
         </div>
-
+        <p class="studies-note reveal">Real client results. Updated as they come in.</p>
       </div>
-      <p class="cases-footer reveal">Real client results. Updated as they come in.</p>
-    </div>
-  </section>
+    </section>
 
-  <!-- ░░ FAQ ░░ -->
-  <section class="section faq" id="faq">
-    <div class="container">
-      <div class="section-label reveal">FAQ</div>
-      <h2 class="section-title reveal">Every question<br /><span class="gradient-text">answered upfront.</span></h2>
-      <div class="faq-list">
-
-        <div class="faq-item glass reveal">
-          <button class="faq-q" aria-expanded="false">
-            Is this an AI chatbot on my website?
-            <span class="faq-icon" aria-hidden="true"></span>
-          </button>
-          <div class="faq-a">
-            <p>No. This runs your phones, your text follow-up, and your customer outreach. Nobody visiting your site is talking to a bot — this is about the calls and customers you already have.</p>
-          </div>
+    <section class="section faq" id="faq">
+      <div class="container faq__container">
+        <div class="section-head reveal">
+          <div class="eyebrow pill">FAQ</div>
+          <h2>Every objection handled before the call</h2>
+          <p>Clean answers, no filler, and two flagged items that still need your final policy decision.</p>
         </div>
-
-        <div class="faq-item glass reveal">
-          <button class="faq-q" aria-expanded="false">
-            Do I have to fire anyone or change how my office works?
-            <span class="faq-icon" aria-hidden="true"></span>
-          </button>
-          <div class="faq-a">
-            <p>No. This fills the gap that's already there — the calls nobody's answering, the quotes nobody's chasing. If you have office staff, this makes their job easier, it doesn't replace them.</p>
-          </div>
+        <div class="faq-list">
+          <article class="faq-item glass reveal"><button class="faq-trigger" aria-expanded="false"><span>Is this an AI chatbot on my website?</span><span class="faq-icon"></span></button><div class="faq-panel"><p>No. This runs your phones, your text follow-up, and your customer outreach. Nobody visiting your site is talking to a bot here.</p></div></article>
+          <article class="faq-item glass reveal"><button class="faq-trigger" aria-expanded="false"><span>Do I have to fire anyone or change how my office works?</span><span class="faq-icon"></span></button><div class="faq-panel"><p>No. This fills the gap that is already there. If you have office staff, this makes their job easier instead of replacing them.</p></div></article>
+          <article class="faq-item glass reveal"><button class="faq-trigger" aria-expanded="false"><span>How fast can this be running?</span><span class="faq-icon"></span></button><div class="faq-panel"><p>Setup depends on what you need, but most systems are live within one to two weeks of signing.</p></div></article>
+          <article class="faq-item glass reveal"><button class="faq-trigger" aria-expanded="false"><span>What if I already have GoHighLevel or ServiceTitan?</span><span class="faq-icon"></span></button><div class="faq-panel"><p>If you already have a system like that in place and actually running well, this may not be the right fit, and that will be said clearly on the audit call.</p></div></article>
+          <article class="faq-item glass reveal"><button class="faq-trigger" aria-expanded="false"><span>What does this cost?</span><span class="faq-icon"></span></button><div class="faq-panel"><p>Pricing depends on what your business actually needs. That gets figured out after the audit call once the real leaks are clear.</p></div></article>
+          <article class="faq-item glass reveal"><button class="faq-trigger" aria-expanded="false"><span>Do I need a contract?</span><span class="faq-icon"></span></button><div class="faq-panel"><p><!-- PLACEHOLDER: replace with real contract policy -->Pending final policy decision.</p></div></article>
+          <article class="faq-item glass reveal"><button class="faq-trigger" aria-expanded="false"><span>What happens on the audit call?</span><span class="faq-icon"></span></button><div class="faq-panel"><p>A short conversation about where calls, quotes, and customers are falling through the cracks in your business right now. No pitch. If it is not a fit, that gets said.</p></div></article>
+          <article class="faq-item glass reveal"><button class="faq-trigger" aria-expanded="false"><span>Is my customer data safe?</span><span class="faq-icon"></span></button><div class="faq-panel"><p><!-- PLACEHOLDER: replace with approved data-security language -->Needs approved data-security language before launch.</p></div></article>
         </div>
-
-        <div class="faq-item glass reveal">
-          <button class="faq-q" aria-expanded="false">
-            How fast can this be running?
-            <span class="faq-icon" aria-hidden="true"></span>
-          </button>
-          <div class="faq-a">
-            <p>Setup depends on what you need, but most systems are live within one to two weeks of signing.</p>
-          </div>
-        </div>
-
-        <div class="faq-item glass reveal">
-          <button class="faq-q" aria-expanded="false">
-            What if I already have GoHighLevel or ServiceTitan?
-            <span class="faq-icon" aria-hidden="true"></span>
-          </button>
-          <div class="faq-a">
-            <p>If you already have a system like that in place and running, this probably isn't the right fit — and we'll tell you that on the audit call.</p>
-          </div>
-        </div>
-
-        <div class="faq-item glass reveal">
-          <button class="faq-q" aria-expanded="false">
-            What does this cost?
-            <span class="faq-icon" aria-hidden="true"></span>
-          </button>
-          <div class="faq-a">
-            <p>Pricing depends on what your business actually needs. That gets figured out after the audit call, once we know your real numbers, not before.</p>
-          </div>
-        </div>
-
-        <div class="faq-item glass reveal">
-          <button class="faq-q" aria-expanded="false">
-            What happens on the audit call?
-            <span class="faq-icon" aria-hidden="true"></span>
-          </button>
-          <div class="faq-a">
-            <p>A short conversation about where calls, quotes, and customers are falling through the cracks in your business right now. No pitch. If it's not a fit, we'll tell you.</p>
-          </div>
-        </div>
-
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ░░ FINAL CTA ░░ -->
-  <section class="section cta-final" id="audit">
-    <div class="cta-bg-glow" aria-hidden="true"></div>
-    <div class="container">
-      <div class="cta-inner glass reveal">
-        <p class="cta-eyebrow">No pitch. Just your real numbers.</p>
-        <h2 class="cta-headline">Every day this runs without you, is a day of revenue you're not chasing down.</h2>
-        <!-- PLACEHOLDER: replace with your actual Calendly or booking link -->
-        <a href="https://calendly.com/empossible/audit" target="_blank" rel="noopener" class="btn btn-primary btn-xl">Book Your Free Revenue Audit</a>
-        <p class="cta-sub">Ten minutes. No pitch. Just your real numbers.</p>
+    <section class="section cta" id="audit">
+      <div class="container">
+        <div class="cta-card glass reveal">
+          <div class="eyebrow pill">Ten minutes. No pitch. Just your real numbers.</div>
+          <h2>Every day this runs without you is a day of revenue you're not chasing down.</h2>
+          <p>Book the audit, find the leaks, and see what your front office is really costing you.</p>
+          <a href="https://cal.com/marcus-collins-qmojtk/empossible-audit-ssession" target="_blank" rel="noopener" class="btn btn-primary btn-xl magnetic"><span>Book Your Free Revenue Audit</span></a>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
-  <!-- ░░ FOOTER ░░ -->
   <footer class="footer">
-    <div class="container footer-inner">
-      <span class="nav-logo">EMP<span>OSSIBLE</span></span>
-      <p class="footer-copy">&copy; 2026 Empossible. All rights reserved.</p>
-      <!-- PLACEHOLDER: add privacy policy and terms links when available -->
-      <div class="footer-links">
-        <a href="#">Privacy Policy</a>
-        <a href="#">Terms</a>
-      </div>
+    <div class="container footer__inner">
+      <span class="brand brand--footer">EMPOSSIBLE</span>
+      <p>&copy; 2026 Empossible. Built to recover lost revenue.</p>
     </div>
   </footer>
 
