@@ -60,13 +60,6 @@ button{font:inherit;color:inherit;background:none;border:none;padding:0;cursor:p
 .stat__value{font-family:var(--font-head);font-size:clamp(2rem,4vw,3.25rem);line-height:1;letter-spacing:-.05em}
 .stat__unit{display:inline-block;margin-left:.25rem;font-size:1rem;color:#d7d7d7;vertical-align:super}
 .stat p{margin:.6rem auto 0;max-width:18ch;color:var(--muted);font-size:.94rem;line-height:1.6}
-.hero__floating{position:absolute;top:10%;width:220px;padding:1.1rem;border-radius:26px;text-align:left;z-index:2;transition:transform .4s var(--ease)}
-.hero__floating--left{left:-1.5rem;transform:rotate(-7deg)}
-.hero__floating--right{right:-1.5rem;transform:rotate(7deg)}
-.hero__floating:hover{transform:rotate(0deg) scale(1.05)}
-.floating__label{display:block;margin-bottom:.4rem;color:var(--muted-2);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase}
-.hero__floating strong{display:block;margin-bottom:.35rem;font-size:1.1rem}
-.hero__floating small{color:var(--muted);line-height:1.5}
 .bento{display:grid;gap:1rem}
 .bento--problem{grid-template-columns:repeat(12,1fr)}
 .panel{position:relative;padding:1.5rem;border-radius:28px;min-height:220px;text-align:center;transition:transform .35s var(--ease),border-color .35s var(--ease),box-shadow .35s var(--ease),background .35s var(--ease)}
@@ -118,11 +111,15 @@ button{font:inherit;color:inherit;background:none;border:none;padding:0;cursor:p
 .cta-card h2{position:relative;margin:0 auto 1rem;max-width:760px;font-family:var(--font-head);font-size:clamp(2rem,4.4vw,4rem);line-height:1;letter-spacing:-.05em}
 .cta-card p{position:relative;max-width:650px;margin:0 auto 1.4rem;font-size:1.06rem}
 .footer{padding:2rem 0 3rem;text-align:center}
-.footer__inner{display:flex;align-items:center;justify-content:center;gap:1rem;flex-wrap:wrap;flex-direction:column}
+.footer__inner{display:flex;align-items:center;justify-content:center;gap:.75rem;flex-wrap:wrap;flex-direction:column}
 .footer__inner p{margin:0;color:var(--muted-2)}
+.footer__contact{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:.5rem 1.25rem;margin:.25rem 0}
+.footer__contact span{color:var(--muted);font-weight:600}
+.footer__contact a{color:var(--muted-2);font-size:.95rem;transition:color .25s var(--ease)}
+.footer__contact a:hover{color:#fff}
 .reveal{opacity:0;transform:translateY(28px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
 .reveal.is-visible{opacity:1;transform:none}
 .tilt-card{transform-style:preserve-3d;will-change:transform}
-@media (max-width:1120px){.hero__floating{display:none}.hero__proof,.hero__stats,.studies-grid,.process-grid{grid-template-columns:1fr}.comparison-shell{grid-template-columns:1fr}.bento--problem,.outcomes-grid{grid-template-columns:1fr}.panel,.panel--wide,.outcome{grid-column:auto!important}}
+@media (max-width:1120px){.hero__proof,.hero__stats,.studies-grid,.process-grid{grid-template-columns:1fr}.comparison-shell{grid-template-columns:1fr}.bento--problem,.outcomes-grid{grid-template-columns:1fr}.panel,.panel--wide,.outcome{grid-column:auto!important}}
 @media (max-width:720px){.topbar__inner{justify-content:center;flex-direction:column}.hero{padding-top:9.5rem}.hero__actions{flex-direction:column}.btn,.btn-xl{width:100%}.cta-card{padding:2.35rem 1rem;border-radius:28px}}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}.reveal{opacity:1!important;transform:none!important}}
